@@ -4,13 +4,13 @@ import React from 'react';
 function ExerciseVideos({exerciseVideos, name}) {
   if (!exerciseVideos.length) return "Loading"
   return (
-    <Box sx={{marginTop:{lg:"200px", xs:"20px"}}} p="20px">
+    <Box sx={{marginTop:{lg:"200px", xs:"20px"}}} p={5}>
       <Typography variant='h4' mb="33px">
         Watch <span style={{color:"#ff2625", textTransform:"capitalize"}}>{name}</span> exercise videos
       </Typography>
       <Stack justifyContent="flex-start" flexWrap="wrap" alignItems="center"
         sx={{flexDirection:{lg:"row"},
-          gap:{lg:"50px", xs:"0"}
+          gap:{lg:"50px", xs:"20px"}
         }}
       >
         {exerciseVideos?.slice(0, 6).map((item, index) =>(
